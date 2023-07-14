@@ -116,6 +116,12 @@ section {
     align-items: center;
 }
 
+#home-attr {
+    position: absolute;
+    bottom: 8vh;
+    right: 0;
+}
+
 .main-logo {
     height: 1em;
 }
