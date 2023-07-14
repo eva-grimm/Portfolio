@@ -20,8 +20,13 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <!-- Site CSS -->
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/iconcard.css">
+    <link rel="stylesheet" href="/css/hovercard.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -33,10 +38,10 @@
             <div id="home-cover">
                 <div class="container text-center w-75">
                     <img src="img/Cadence-Eva-logo-transparent.png" class="w-100" alt="">
-                    <a href="#contact" class="btn btn-primary mt-3 w-100">CONTACT ME</a> 
+                    <a href="#contact" class="btn btn-primary mt-3 w-100">CONTACT ME</a>
                 </div>
                 <!-- TO DO: Figure out how to put this in the bottom right -->
-                
+
             </div>
             <p class="attribution text-light align-items-end" id="home-attr">
                 Background by <a
@@ -47,16 +52,15 @@
         </section>
         <section class="section-page" id="about">
             <div class="container text-center">
-                <h2 class="display-1">About Me</h2>
-                <img src="/img/Microsites-amico.svg" class="w-50"
-                    alt="Cross-platform software development clipart">
+                <h2 class="display-1 mb-5">About Me</h2>
+                <img src="/img/Microsites-amico.svg" class="w-50" alt="Cross-platform software development clipart">
                 <p class="attribution">
                     <a href="https://storyset.com/people" class="attribution text-decoration-none">Illustration
                         by
                         Storyset</a>
                 </p>
                 <article class="text-start">
-                    I am a software developer based in Southwest Virginia near Roanoke. I have been working in
+                    I am a software developer based near Roanoke, Virginia. I have been working in
                     information technology for a decade and now do full stack development, pairing C# and .NET
                     backend with a
                     sylish front end to makes my applications appealing to use. I am comfortable prioritizing and
@@ -68,10 +72,157 @@
             </div>
         </section>
         <section class="section-page" id="skills">
-            <h2 class="display-1">What I Use</h2>
+            <h2 class="display-1 mb-5">What I Use</h2>
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-12 col-lg-6" id="back-card">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill icons -->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+                                </div>
+                                <div class="icon dotnet">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    I use C# when developing the back-end of my full-stack applications. You can find
+                                    examples of my work utilizing C# in
+                                    my <a href="#projects">projects</a>.
+                                </p>
+                                <p>
+                                    I use ASP.NET Core Web and MVC when designing my websites because they're
+                                    strong, proven patterns and frameworks that work for most projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6" id="front-card">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill icons -->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                </div>
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                </div>
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    HTML, CSS, and Bootstrap are how I design beautiful, responsive websites for my
+                                    projects. Customers want more than just a good program; they want an intuitive
+                                    application with an inviting appearance. Designing a website's front-end is just as
+                                    important as designing its back-end!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4" id="js-card">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill icons -->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    JavaScript is ubiquitous on the internet. I use vanilla JS and am comfortable with
+                                    many JS frameworks. In my <a href="#challenges">challenges</a> section, I have
+                                    several JS projects
+                                    that solve common problems in modern industries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4" id="sql-card">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill icons -->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    SQL databases are used in all of my projects for storing data. I specifically
+                                    utilize PostgreSQL in my projects because of its long
+                                    history of use but can write SQL on any DB platform.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4" id="ci-cd-card">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- Skill icons -->
+                                <div class="icon git">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                                </div>
+                                <div class="icon github">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- Content -->
+                                <p>
+                                    I use git as a source control for all of my projects because of its worldwide
+                                    utilization. I host my projects on <a href="https://github.com/eva-grimm">my
+                                        github</a> and use
+                                    CI/CD for publishing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section class="section-page" id="projects">
-            <h2>Projects</h2>
+            <h2 class="display-1 mb-5">Things I Have Built</h2>
+            <p>I built these full-stack applications to demontrate what I can bring to your project. I developed the
+                front-end, back-end, security, and database from the ground up, and they are all published to make it
+                easier for you to demo. </p>
+            <p>You can <a href="#contact">contact me</a> for a complete code walk-through.</p>
+            <div class="row gy-5 mt-5 row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="/img/logos/BugTracker_600.jpg">
+                                <img src="/img/logos/BugTracker_200.jpg" alt="Bug Tracker Logo">
+                            </picture>
+                            <div class="hc-content">
+
+                            </div>
+                            <p>
+                                A full-stack bug tracker built with ASP.NET MVC, C#, and SQL.
+                            </p>
+                            <button type="button" class="btn btn-primary">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="section-page" id="challenges">
             <h2>Challenges</h2>
@@ -80,7 +231,7 @@
             <h2>Blogs</h2>
         </section>
         <section class="section-page" id="contact">
-            <h2 class="display-1">Contact Me</h2>
+            <h2 class="display-1 mb-5">Contact Me</h2>
             <div class="text-start" id="contactForm">
                 <div class="container border rounded-2">
                     <form action="#" class="row g-2 p-3">
