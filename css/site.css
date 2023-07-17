@@ -18,9 +18,8 @@
     --ce-line-height: 1.5rem;
     --ce-title-color: var(--ce-dark-color);
 
-    /* blue theme */
-    /* core: 0d6efd 
-        h: 216 */
+    /* primary theme */
+    /* core: 0d6efd h: 216 */
     --ce-theme-core: #7ADAF5;
     --ce-theme-100: hsl(193, 50%, 91%);
     --ce-theme-150: hsl(193, 50%, 86%);
@@ -33,6 +32,21 @@
     --ce-theme-800: hsl(193, 50%, 21%);
     --ce-theme-850: hsl(193, 50%, 16%);
     --ce-theme-900: hsl(193, 50%, 11%);
+
+    /* accent theme */
+    /* core: 0d6efd h: 216 */
+    --ce-accent-core: #f5978f;
+    --ce-accent-100: hsl(5, 50%, 91%);
+    --ce-accent-150: hsl(5, 50%, 86%);
+    --ce-accent-200: hsl(5, 50%, 81%);
+    --ce-accent-300: hsl(5, 50%, 71%);
+    --ce-accent-400: hsl(5, 50%, 61%);
+    --ce-accent-500: hsl(5, 50%, 51%);
+    --ce-accent-600: hsl(5, 50%, 41%);
+    --ce-accent-700: hsl(5, 50%, 31%);
+    --ce-accent-800: hsl(5, 50%, 21%);
+    --ce-accent-850: hsl(5, 50%, 16%);
+    --ce-accent-900: hsl(5, 50%, 11%);
 }
 
 /* #region Element Overrides */

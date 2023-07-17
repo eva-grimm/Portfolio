@@ -25,8 +25,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/site.css">
-    <link rel="stylesheet" href="/css/iconcard.css">
-    <link rel="stylesheet" href="/css/hovercard.css">
+    <link rel="stylesheet" href="/css/iconCard.css">
+    <link rel="stylesheet" href="/css/hoverCard.css">
+    <link rel="stylesheet" href="/css/blogCard.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -237,7 +238,8 @@
                                         <!-- TO DO: Update with description -->
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     </p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addressBookModal">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#addressBookModal">
                                         Learn More
                                     </button>
                                 </div>
@@ -257,7 +259,8 @@
                                         <!-- TO DO: Update with description -->
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     </p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#devBlogModal">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#devBlogModal">
                                         Learn More
                                     </button>
                                 </div>
@@ -269,7 +272,7 @@
         </section>
         <section class="section-page" id="challenges">
             <div class="container">
-                <h2 class="display-1 my-5 text-center">Smaller Things I Have Built</h2>
+                <h2 class="display-1 mb-5 text-center">Smaller Things I Have Built</h2>
                 <p> Smaller in scope and scale than my full-stack projects, these coding challengese are mini apps I put
                     together to test my problem-solving and showcase my javascript skills and different UI designs. All
                     of these projects are published, which makes it easier for you to demo my work.</p>
@@ -387,7 +390,155 @@
             </div>
         </section>
         <section class="section-page" id="blogs">
-            <h2>Blogs</h2>
+            <div class="container">
+                <h2 class="display-1 mb-5 text-center">Blogs</h2>
+
+                <p>
+                    I've been learning from others and their work for ages, so it only makes sense to pay it forward.
+                </p>
+                <div id="blog-posts">
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <!-- blog image -->
+                            <div class="col-lg-4 blog-header">
+                                <a href="#" class="blog-image-link">
+                                    <img src="img/blog/Blog_FlyingGirl.jpg" class="blog-image" alt="blog post image">
+                                </a>
+                                <!-- date of post -->
+                                <div class="blog-date">
+                                    <div class="blog-day">11</div>
+                                    <div class="blog-month">JANUARY</div>
+                                </div>
+                            </div>
+                            <!-- title and text preview -->
+                            <div class="col-lg-8">
+                                <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                    <h3 class="card-title">MAKE SQL QUERIES FLY</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero facere ex
+                                        aliquam laboriosam amet hic eveniet aperiam dolore perspiciatis itaque, facilis
+                                        voluptatem? Necessitatibus, eum adipisci amet asperiores nesciunt at.
+                                        In aut illum eligendi facilis culpa, totam vel corrupti reiciendis saepe enim,
+                                        exercitationem tempora dolorem recusandae accusamus nemo. Excepturi quisquam
+                                        placeat sed eaque dicta esse et velit temporibus soluta fuga.
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text small text-muted">
+                                        Published 3 days ago
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <!-- blog image -->
+                            <div class="col-lg-4 blog-header">
+                                <a href="#" class="blog-image-link">
+                                    <img src="img/blog/Blog_Database.jpg" class="blog-image" alt="blog post image">
+                                </a>
+                                <!-- date of post -->
+                                <div class="blog-date">
+                                    <div class="blog-day">12</div>
+                                    <div class="blog-month">FEBRUARY</div>
+                                </div>
+                            </div>
+                            <!-- title and text preview -->
+                            <div class="col-lg-8">
+                                <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                    <h3 class="card-title">STORING IMAGES IN A DB</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero facere ex
+                                        aliquam laboriosam amet hic eveniet aperiam dolore perspiciatis itaque, facilis
+                                        voluptatem? Necessitatibus, eum adipisci amet asperiores nesciunt at.
+                                        In aut illum eligendi facilis culpa, totam vel corrupti reiciendis saepe enim,
+                                        exercitationem tempora dolorem recusandae accusamus nemo. Excepturi quisquam
+                                        placeat sed eaque dicta esse et velit temporibus soluta fuga.
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text small text-muted">
+                                        Published 3 days ago
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <!-- blog image -->
+                            <div class="col-lg-4 blog-header">
+                                <a href="#" class="blog-image-link">
+                                    <img src="img/blog/Blog_CodeTag.jpg" class="blog-image" alt="blog post image">
+                                </a>
+                                <!-- date of post -->
+                                <div class="blog-date">
+                                    <div class="blog-day">13</div>
+                                    <div class="blog-month">MARCH</div>
+                                </div>
+                            </div>
+                            <!-- title and text preview -->
+                            <div class="col-lg-8">
+                                <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                    <h3 class="card-title">THE POWER OF CSS</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero facere ex
+                                        aliquam laboriosam amet hic eveniet aperiam dolore perspiciatis itaque, facilis
+                                        voluptatem? Necessitatibus, eum adipisci amet asperiores nesciunt at.
+                                        In aut illum eligendi facilis culpa, totam vel corrupti reiciendis saepe enim,
+                                        exercitationem tempora dolorem recusandae accusamus nemo. Excepturi quisquam
+                                        placeat sed eaque dicta esse et velit temporibus soluta fuga.
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text small text-muted">
+                                        Published 3 days ago
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card mb-4 blog-article">
+                        <div class="row blog-row g-0">
+                            <!-- blog image -->
+                            <div class="col-lg-4 blog-header">
+                                <a href="#" class="blog-image-link">
+                                    <img src="img/blog/Blog_DecisionRoad.jpg" class="blog-image" alt="blog post image">
+                                </a>
+                                <!-- date of post -->
+                                <div class="blog-date">
+                                    <div class="blog-day">14</div>
+                                    <div class="blog-month">APRIL</div>
+                                </div>
+                            </div>
+                            <!-- title and text preview -->
+                            <div class="col-lg-8">
+                                <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                    <h3 class="card-title">SPA VS MPA FRAMEWORKS</h3>
+                                    <p class="card-text line-clamp">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero facere ex
+                                        aliquam laboriosam amet hic eveniet aperiam dolore perspiciatis itaque, facilis
+                                        voluptatem? Necessitatibus, eum adipisci amet asperiores nesciunt at.
+                                        In aut illum eligendi facilis culpa, totam vel corrupti reiciendis saepe enim,
+                                        exercitationem tempora dolorem recusandae accusamus nemo. Excepturi quisquam
+                                        placeat sed eaque dicta esse et velit temporibus soluta fuga.
+                                    </p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                    <p class="card-text small text-muted">
+                                        Published 3 days ago
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
         <section class="section-page" id="contact">
             <h2 class="display-1 mb-5">Contact Me</h2>
@@ -638,13 +789,13 @@
                                             alt="Screenshot 3">
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#addressBookCarousel"
-                                    data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#addressBookCarousel" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#addressBookCarousel"
-                                    data-bs-slide="next">
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#addressBookCarousel" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -744,8 +895,7 @@
                                 <div class="carousel-inner">
                                     <!-- TO DO: Update with genuine image of dev blog later -->
                                     <div class="carousel-item active">
-                                        <img src="/img/logos/Tech_Talk.png" class="d-block w-100"
-                                            alt="Dev blog Logo">
+                                        <img src="/img/logos/Tech_Talk.png" class="d-block w-100" alt="Dev blog Logo">
                                     </div>
                                     <!-- TO DO: Update with genuine image of dev blog later -->
                                     <div class="carousel-item">
