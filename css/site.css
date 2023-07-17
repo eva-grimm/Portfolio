@@ -164,17 +164,45 @@ section {
 
 .section-page {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
+    position: relative;
+    overflow: visible;
+    margin-top: -3rem;
 }
 
-.section-page:nth-child(even) {
+/* section dividers */
+.section-page>.container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    /* for curved cuts between sections */
+    /* clip-path: ellipse(50% 100% at top center); */
+    z-index: 1;
+}
+
+/* triangular cuts */
+.section-page:nth-child(even)>.container::after {
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+.section-page:nth-child(odd)>.container::after {
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
+}
+
+/* alternating backgrounds per section */
+.section-page:nth-child(even),
+.section-page:nth-child(even)>.container::after {
     background-color: var(--ce-theme-100);
 }
 
-.section-page:nth-child(odd) {
+.section-page:nth-child(odd),
+.section-page:nth-child(odd)>.container::after {
     background-color: var(--ce-theme-150);
 }
 
+/* attribution for images */
 .attribution {
     font-size: .7rem;
     text-align: end;
