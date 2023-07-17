@@ -28,13 +28,83 @@
     <link rel="stylesheet" href="/css/iconCard.css">
     <link rel="stylesheet" href="/css/hoverCard.css">
     <link rel="stylesheet" href="/css/blogCard.css">
+    <link rel="stylesheet" href="/css/menupill.css">
+    <link rel="stylesheet" href="/css/themes.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <main>
+    <div id="menuPillContainer" class="navbar navbar-dark">
+        <nav id="menuPill" class="navbar-nav text-light">
+            <div class="nav-item">
+                <a href="#home" class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <span class="menu-label">Home</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#about" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="About Me" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </div>
+                    <span class="menu-label">About Me</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#skills" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Skills" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-wrench-adjustable"></i>
+                    </div>
+                    <span class="menu-label">Skills</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#projects" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Projects" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-braces-asterisk"></i>
+                    </div>
+                    <span class="menu-label">Projects</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#challenges" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Challenges" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-terminal"></i>
+                    </div>
+                    <span class="menu-label">Challenges</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#blog" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Blog" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <span class="menu-label">Blog</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#contact" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Contact Me" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </div>
+                    <span class="menu-label">Contact Me</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main data-bs-spy="scroll" data-bs-target="#menuPill">
         <section id="home">
             <div id="home-cover">
                 <div class="container text-center w-75">
@@ -388,7 +458,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-page" id="blogs">
+        <section class="section-page" id="blog">
             <div class="container">
                 <h2 class="display-1 mb-5 text-center">Blogs</h2>
                 <p>
@@ -540,7 +610,7 @@
         </section>
         <section class="section-page" id="contact">
             <div class="container">
-                <h2 class="display-1 mb-5">Contact Me</h2>
+                <h2 class="display-1 mb-5 text-center">Contact Me</h2>
                 <div class="text-start" id="contactForm">
                     <div class="container border rounded-2">
                         <form action="#" class="row g-2 p-3">
@@ -597,17 +667,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 d-none d-lg-block d-flex justify-content-end text-end">
+                <div class="col-lg-3 d-none d-lg-block d-flex justify-content-end text-end" data-ce-theme="accent">
                     <a href="https://www.linkedin.com/in/cadence-eva-custin/" class="text-decoration-none"
                         alt="linkedin">
                         <i class="bi bi-linkedin social-icons p-2"></i>
                     </a>
                     <a href="https://github.com/eva-grimm" class="text-decoration-none" alt="github">
                         <i class="bi bi-github social-icons p-2"></i>
-                    </a>
-                    <!-- TO DO: PUT NEW TWITTER HERE -->
-                    <a href="#" class="text-decoration-none" alt="github">
-                        <i class="bi bi-twitter social-icons p-2"></i>
                     </a>
                     <a href="mailto:eva.custin@gmail.com" class="text-decoration-none" alt="email">
                         <i class="bi bi-envelope-at social-icons p-2"></i>

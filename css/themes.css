@@ -1,0 +1,59 @@
+:root {
+    /* default theme */
+    --ce-theme-core: #7ADAF5;
+    --ce-theme-100: hsl(193, 50%, 91%);
+    --ce-theme-150: hsl(193, 50%, 86%);
+    --ce-theme-200: hsl(193, 50%, 81%);
+    --ce-theme-300: hsl(193, 50%, 71%);
+    --ce-theme-400: hsl(193, 50%, 61%);
+    --ce-theme-500: hsl(193, 50%, 51%);
+    --ce-theme-600: hsl(193, 50%, 41%);
+    --ce-theme-700: hsl(193, 50%, 31%);
+    --ce-theme-800: hsl(193, 50%, 21%);
+    --ce-theme-850: hsl(193, 50%, 16%);
+    --ce-theme-900: hsl(193, 50%, 11%);
+
+    /* accent theme */
+    --ce-accent-core: #f5978f;
+    --ce-accent-100: hsl(5, 50%, 91%);
+    --ce-accent-150: hsl(5, 50%, 86%);
+    --ce-accent-200: hsl(5, 50%, 81%);
+    --ce-accent-300: hsl(5, 50%, 71%);
+    --ce-accent-400: hsl(5, 50%, 61%);
+    --ce-accent-500: hsl(5, 50%, 51%);
+    --ce-accent-600: hsl(5, 50%, 41%);
+    --ce-accent-700: hsl(5, 50%, 31%);
+    --ce-accent-800: hsl(5, 50%, 21%);
+    --ce-accent-850: hsl(5, 50%, 16%);
+    --ce-accent-900: hsl(5, 50%, 11%);
+}
+
+[data-ce-theme="default"] {
+    --ce-theme-core: var(--ce-theme-core);
+    --ce-theme-100: var(--ce-theme-100);
+    --ce-theme-150: var(--ce-theme-150);
+    --ce-theme-200: var(--ce-theme-200);
+    --ce-theme-300: var(--ce-theme-300);
+    --ce-theme-400: var(--ce-theme-400);
+    --ce-theme-500: var(--ce-theme-500);
+    --ce-theme-600: var(--ce-theme-600);
+    --ce-theme-700: var(--ce-theme-700);
+    --ce-theme-800: var(--ce-theme-800);
+    --ce-theme-850: var(--ce-theme-850);
+    --ce-theme-900: var(--ce-theme-900);
+}
+
+[data-ce-theme="accent"] {
+    --ce-theme-core: var(--ce-accent-core);
+    --ce-theme-100: var(--ce-accent-100);
+    --ce-theme-150: var(--ce-accent-150);
+    --ce-theme-200: var(--ce-accent-200);
+    --ce-theme-300: var(--ce-accent-300);
+    --ce-theme-400: var(--ce-accent-400);
+    --ce-theme-500: var(--ce-accent-500);
+    --ce-theme-600: var(--ce-accent-600);
+    --ce-theme-700: var(--ce-accent-700);
+    --ce-theme-800: var(--ce-accent-800);
+    --ce-theme-850: var(--ce-accent-850);
+    --ce-theme-900: var(--ce-accent-900);
+}
