@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/site.css">
+    <link id="primaryTheme" rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href="/css/iconCard.css">
     <link rel="stylesheet" href="/css/hoverCard.css">
     <link rel="stylesheet" href="/css/blogCard.css">
@@ -35,6 +35,19 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <!-- Script for de/activating high contrast accessibility -->
+    <script type="text/javascript">
+        function swapStyleSheet() {
+            let primaryTheme = document.getElementById("primaryTheme");
+            if (primaryTheme.getAttribute("href") == "/css/site.css") {
+                primaryTheme.setAttribute("href", "/css/highContrast.css");
+            } else {
+                primaryTheme.setAttribute("href", "/css/site.css");
+                console.log("Else")
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -117,7 +130,12 @@
                     <a href="#contact" class="btn btn-primary w-25">CONTACT ME</a>
                 </div>
             </div>
-            <p class="attribution text-light align-items-end" id="home-attr">
+            <button id="access-btn" class="btn btn-primary btn-lg" aria-label="Activate High Contrast Theme"
+                onclick="swapStyleSheet()">
+                <i class="bi bi-universal-access-circle"></i>
+                <span class="d-none d-md-inline-block">Toggle High Contrast</span>
+            </button>
+            <p class="text-light align-items-end" id="home-attr">
                 Background by <a
                     href="https://unsplash.com/@vorosbenisop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Benjamin
                     Voros</a> on <a
@@ -654,7 +672,7 @@
                     <div class="card shadow">
                         <div class="card-body text-center p-2">
                             <!-- TO DO: CHANGE THIS TO THE BUG TRACKER LINK -->
-                            Check out my <a href="#" class="text-decoration-none">Bug Tracker</a>!
+                            Check out my <a href="#">Bug Tracker</a>!
                         </div>
                     </div>
                 </div>

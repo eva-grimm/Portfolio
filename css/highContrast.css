@@ -18,17 +18,17 @@
 
     /* default theme */
     --ce-theme-core: #7ADAF5;
-    --ce-theme-100: hsl(193, 50%, 91%);
-    --ce-theme-150: hsl(193, 50%, 86%);
-    --ce-theme-200: hsl(193, 50%, 81%);
-    --ce-theme-300: hsl(193, 50%, 71%);
-    --ce-theme-400: hsl(193, 50%, 61%);
-    --ce-theme-500: hsl(193, 50%, 51%);
-    --ce-theme-600: hsl(193, 50%, 41%);
-    --ce-theme-700: hsl(193, 50%, 31%);
-    --ce-theme-800: hsl(193, 50%, 21%);
-    --ce-theme-850: hsl(193, 50%, 16%);
-    --ce-theme-900: hsl(193, 50%, 11%);
+    --ce-theme-100: hsl(0, 0%, 90%);
+    --ce-theme-150: hsl(0, 0%, 80%);
+    --ce-theme-200: hsl(0, 0%, 70%);
+    --ce-theme-300: hsl(0, 0%, 60%);
+    --ce-theme-400: hsl(0, 0%, 50%);
+    --ce-theme-500: hsl(0, 0%, 40%);
+    --ce-theme-600: hsl(0, 0%, 30%);
+    --ce-theme-700: hsl(0, 0%, 20%);
+    --ce-theme-800: hsl(0, 0%, 10%);
+    --ce-theme-850: hsl(0, 0%, 5%);
+    --ce-theme-900: hsl(0, 0%, 0%);
 
     /* accent theme */
     --ce-accent-core: #f5978f;
@@ -76,12 +76,12 @@ h1,
 }
 
 a {
-    color: var(--ce-accent-400);
+    color: var(--ce-accent-500);
     transition: .25s ease-in-out;
 }
 
 a:hover {
-    color: var(--ce-accent-300)
+    color: var(--ce-accent-600)
 }
 
 /* TO DO: Edit this margin later? Currently set to make sure footer never hides content */
@@ -98,18 +98,17 @@ section {
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--ce-accent-250);
-    --bs-btn-border-color: var(--ce-accent-250);
-    --bs-btn-hover-bg: var(--ce-accent-300);
-    --bs-btn-hover-border-color: var(--ce-accent-300);
+    --bs-btn-bg: var(--ce-accent-400);
+    --bs-btn-border-color: var(--ce-accent-400);
+    --bs-btn-hover-bg: var(--ce-accent-600);
+    --bs-btn-hover-border-color: var(--ce-accent-600);
 }
 
 /*  #endregion Element Overrides */
 
 /* #region Home Section */
 #home {
-    background-color: var(--ce-theme-900);
-    background-image: url(/img/meteor-over-mountain.jpg);
+    background-color: var(--ce-theme-150);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -117,7 +116,7 @@ section {
 }
 
 #home-cover {
-    backdrop-filter: brightness(0.35) blur(1px);
+    backdrop-filter: brightness(0.3) blur(1px);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -138,6 +137,10 @@ section {
     bottom: 10vh;
     right: 1rem;
     font-size: .6rem;
+}
+
+#home-attr a {
+    color: var(--ce-accent-200);
 }
 
 #main-logo {
@@ -225,7 +228,7 @@ section {
 /* attribution for images */
 #about-attr {
     padding-right: 4rem;
-    font-size: .6rem;
+    font-size: 2rem;
 }
 
 /* #endregion Main Content */
@@ -234,11 +237,11 @@ section {
 .social-icons {
     font-size: 2rem;
     transition: color 0.5s;
-    color: var(--ce-accent-250);
+    color: var(--ce-accent-100);
 }
 
 .social-icons:hover {
-    color: var(--ce-accent-300)
+    color: var(--ce-accent-400)
 }
 
 footer.fixed-bottom {
@@ -246,20 +249,19 @@ footer.fixed-bottom {
 }
 
 footer .card {
-    background-color: var(--ce-accent-250);
+    background-color: var(--ce-accent-100);
 }
 
 footer .card-body {
-    color: var(--ce-accent-850);
+    color: var(--ce-theme-850);
 }
 
 footer a {
-    color: var(--ce-accent-600);
-    text-decoration: none;
+    color: var(--ce-theme-800);
 }
 
 footer a:hover {
-    color: var(--ce-accent-500);
+    color: var(--ce-accent-600);
 }
 
 /* #endregion Footer Styles */
