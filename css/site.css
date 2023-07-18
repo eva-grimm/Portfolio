@@ -129,7 +129,7 @@ section {
     position: absolute;
     bottom: 9vh;
     right: 1rem;
-    font-size: small;
+    font-size: .6rem;
 }
 
 #main-logo {
@@ -216,13 +216,8 @@ section {
 
 /* attribution for images */
 #about-attr {
-    position: absolute;
-    bottom: 42vh;
-    right: 28vw;
-    font-size: .7rem;
-    text-align: end;
-    padding-right: .8rem;
-    margin-bottom: 3rem;
+    padding-right: 4rem;
+    font-size: .6rem;
 }
 
 /* #endregion Main Content */
@@ -262,6 +257,8 @@ footer .card-body>a:hover {
 /* #endregion Footer Styles */
 
 /* #region Media Queries */
+
+/* Select XS devices smaller than bootstrap SM breakpoint */
 @media (min-width: 448px) {
     #home-contact>.btn {
         font-size: .8rem;
@@ -273,12 +270,30 @@ footer .card-body>a:hover {
     #home-contact>.btn {
         font-size: 1rem;
     }
+
+    #home-attr {
+        font-size: .8rem;
+    }
+
+    #about-attr {
+        font-size: .8rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #home-contact>.btn {
         font-size: 1.2rem;
+    }
+
+    #about-attr {
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #about-attr {
+        padding-right: 4rem;
     }
 }
 
