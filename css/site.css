@@ -35,6 +35,7 @@
     --ce-accent-100: hsl(5, 84%, 91%);
     --ce-accent-150: hsl(5, 84%, 86%);
     --ce-accent-200: hsl(5, 84%, 81%);
+    --ce-accent-250: hsl(5, 84%, 76%);
     --ce-accent-300: hsl(5, 84%, 71%);
     --ce-accent-400: hsl(5, 84%, 61%);
     --ce-accent-500: hsl(5, 84%, 51%);
@@ -97,8 +98,8 @@ section {
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--ce-accent-200);
-    --bs-btn-border-color: var(--ce-accent-200);
+    --bs-btn-bg: var(--ce-accent-250);
+    --bs-btn-border-color: var(--ce-accent-250);
     --bs-btn-hover-bg: var(--ce-accent-300);
     --bs-btn-hover-border-color: var(--ce-accent-300);
 }
@@ -226,7 +227,7 @@ section {
 .social-icons {
     font-size: 2rem;
     transition: color 0.5s;
-    color: var(--ce-accent-200);
+    color: var(--ce-accent-250);
 }
 
 .social-icons:hover {
@@ -238,11 +239,10 @@ footer.fixed-bottom {
 }
 
 footer .card {
-    background-color: var(--ce-accent-200);
+    background-color: var(--ce-accent-250);
 }
 
 footer .card-body {
-    /* change? looks funky because it's a "button" but doesn't act like the others */
     color: white;
 }
 
