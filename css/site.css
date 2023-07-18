@@ -97,10 +97,10 @@ section {
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--ce-accent-300);
-    --bs-btn-border-color: var(--ce-accent-300);
-    --bs-btn-hover-bg: var(--ce-accent-400);
-    --bs-btn-hover-border-color: var(--ce-accent-400);
+    --bs-btn-bg: var(--ce-accent-200);
+    --bs-btn-border-color: var(--ce-accent-200);
+    --bs-btn-hover-bg: var(--ce-accent-300);
+    --bs-btn-hover-border-color: var(--ce-accent-300);
 }
 
 /*  #endregion Element Overrides */
@@ -238,20 +238,12 @@ footer.fixed-bottom {
 }
 
 footer .card {
-    background-color: var(--ce-accent-300);
+    background-color: var(--ce-accent-200);
 }
 
 footer .card-body {
     /* change? looks funky because it's a "button" but doesn't act like the others */
-    color: var(--ce-theme-900);
-}
-
-footer .card-body>a {
-    color: var(--ce-theme-700);
-}
-
-footer .card-body>a:hover {
-    color: var(--ce-theme-600);
+    color: white;
 }
 
 /* #endregion Footer Styles */
