@@ -1,14 +1,12 @@
 :root {
     /* fonts */
-    --ce-logo-color: #77b8f8;
-    --ce-accent-color: #f5978f;
     --ce-title-font: 'Bebas Neue', sans-serif;
     --ce-subtitle-font: 'Fire Sans', sans-serif;
     --ce-heading-font: 'Bebas Neue', sans-serif;
     --ce-body-font: 'Roboto', sans-serif;
 
     /* colors */
-    --ce-dark-color: #212121;
+    --ce-dark-color: var(--ce-theme-850);
     --ce-light-color: #deeefb;
     --ce-background-color: rgba(250, 250, 250, 0.8);
 
@@ -16,10 +14,9 @@
     --ce-font-size: 1.2rem;
     --ce-font-weight: 400;
     --ce-line-height: 1.5rem;
-    --ce-title-color: var(--ce-dark-color);
+    --ce-title-color: var(--ce-accent-850);
 
-    /* primary theme */
-    /* core: 0d6efd h: 216 */
+    /* default theme */
     --ce-theme-core: #7ADAF5;
     --ce-theme-100: hsl(193, 50%, 91%);
     --ce-theme-150: hsl(193, 50%, 86%);
@@ -34,19 +31,18 @@
     --ce-theme-900: hsl(193, 50%, 11%);
 
     /* accent theme */
-    /* core: 0d6efd h: 216 */
     --ce-accent-core: #f5978f;
-    --ce-accent-100: hsl(5, 50%, 91%);
-    --ce-accent-150: hsl(5, 50%, 86%);
-    --ce-accent-200: hsl(5, 50%, 81%);
-    --ce-accent-300: hsl(5, 50%, 71%);
-    --ce-accent-400: hsl(5, 50%, 61%);
-    --ce-accent-500: hsl(5, 50%, 51%);
-    --ce-accent-600: hsl(5, 50%, 41%);
-    --ce-accent-700: hsl(5, 50%, 31%);
-    --ce-accent-800: hsl(5, 50%, 21%);
-    --ce-accent-850: hsl(5, 50%, 16%);
-    --ce-accent-900: hsl(5, 50%, 11%);
+    --ce-accent-100: hsl(5, 84%, 91%);
+    --ce-accent-150: hsl(5, 84%, 86%);
+    --ce-accent-200: hsl(5, 84%, 81%);
+    --ce-accent-300: hsl(5, 84%, 71%);
+    --ce-accent-400: hsl(5, 84%, 61%);
+    --ce-accent-500: hsl(5, 84%, 51%);
+    --ce-accent-600: hsl(5, 84%, 41%);
+    --ce-accent-700: hsl(5, 84%, 31%);
+    --ce-accent-800: hsl(5, 84%, 21%);
+    --ce-accent-850: hsl(5, 84%, 16%);
+    --ce-accent-900: hsl(5, 84%, 11%);
 }
 
 /* #region Element Overrides */
@@ -101,17 +97,15 @@ section {
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--ce-theme-600);
-    --bs-btn-border-color: var(--ce-theme-600);
-    --bs-btn-hover-bg: var(--ce-theme-700);
-    --bs-btn-hover-border-color: var(--ce-theme-700);
-
+    --bs-btn-bg: var(--ce-accent-300);
+    --bs-btn-border-color: var(--ce-accent-300);
+    --bs-btn-hover-bg: var(--ce-accent-400);
+    --bs-btn-hover-border-color: var(--ce-accent-400);
 }
 
 /*  #endregion Element Overrides */
 
 /* #region Home Section */
-
 #home {
     background-color: var(--ce-theme-900);
     background-image: url(/img/meteor-over-mountain.jpg);
@@ -133,12 +127,25 @@ section {
 
 #home-attr {
     position: absolute;
-    bottom: 8vh;
-    right: 0;
+    bottom: 9vh;
+    right: 1rem;
+    font-size: small;
 }
 
-.main-logo {
-    height: 1em;
+#main-logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 50vh;
+    width: 75%;
+}
+
+#home-contact {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 42vh;
+    width: 100%;
 }
 
 .main-title,
@@ -171,7 +178,6 @@ section {
     margin-top: -3rem;
 }
 
-/* section dividers */
 .section-page>.container::after {
     content: "";
     position: absolute;
@@ -205,15 +211,19 @@ section {
 }
 
 /* attribution for images */
-.attribution {
+#about-attr {
+    position: absolute;
+    bottom: 42vh;
+    right: 28vw;
     font-size: .7rem;
     text-align: end;
     padding-right: .8rem;
+    margin-bottom: 3rem;
 }
 
 /* #endregion Main Content */
 
-/* #region: Footer Styles */
+/* #region Footer Styles */
 .social-icons {
     font-size: 2rem;
     transition: color 0.5s;
@@ -225,7 +235,7 @@ section {
 }
 
 footer.fixed-bottom {
-    background-color: var(--ce-theme-900);
+    background-color: var(--ce-theme-850);
 }
 
 footer .card {
@@ -233,6 +243,7 @@ footer .card {
 }
 
 footer .card-body {
+    /* change? looks funky because it's a "button" but doesn't act like the others */
     color: var(--ce-theme-900);
 }
 
@@ -244,7 +255,7 @@ footer .card-body>a:hover {
     color: var(--ce-theme-600);
 }
 
-/* #endregion: Footer Styles */
+/* #endregion Footer Styles */
 
 /* #region Media Queries */
 /* X-Small devices (portrait phones, less than 576px)

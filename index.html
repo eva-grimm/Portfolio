@@ -110,12 +110,13 @@
     <main data-bs-spy="scroll" data-bs-target="#menuPill">
         <section id="home">
             <div id="home-cover">
-                <div class="container text-center w-75">
-                    <img src="img/Cadence-Eva-logo-transparent.png" class="w-100" alt="">
-                    <a href="#contact" class="btn btn-primary mt-3 w-100">CONTACT ME</a>
+                <div id="main-logo" class="container text-center">
+                    <img src="img/Cadence-Eva-logo-transparent.png" class="w-100" alt="Cadence Eva Logo">
                 </div>
-                <!-- TO DO: Figure out how to put this in the bottom right -->
-
+                <!-- Remove? Looks non-centered in relation to logo -->
+                <div id="home-contact" class="container text-center">
+                    <a href="#contact" class="btn btn-primary w-25">CONTACT ME</a>
+                </div>
             </div>
             <p class="attribution text-light align-items-end" id="home-attr">
                 Background by <a
@@ -127,9 +128,10 @@
         <section class="section-page" id="about">
             <div class="container text-center">
                 <h2 class="display-1 mb-5">About Me</h2>
-                <img src="/img/Microsites-amico.svg" class="w-50" alt="Cross-platform software development clipart">
-                <p class="attribution">
-                    <a href="https://storyset.com/people" class="attribution text-decoration-none">Illustration
+                <img src="/img/Microsites-amico.svg" class="w-50 mb-5"
+                    alt="Cross-platform software development clipart">
+                <p>
+                    <a href="https://storyset.com/people" class="text-decoration-none" id="about-attr">Illustration
                         by
                         Storyset</a>
                 </p>
@@ -142,12 +144,13 @@
                     fast, accurate work. Please take a look at my portfolio and let me know if we can work together
                     on your next project!
                 </article>
-                <a href="#link resume here#" class="btn btn-primary my-3">Download Resume</a>
+                <a href="/Custin Resume.pdf" download class="btn btn-primary btn-lg my-3 text-decoration-none">Download
+                    My Resume</a>
             </div>
         </section>
         <section class="section-page" id="skills">
             <div class="container">
-                <h2 class="display-1 mb-5">What I Use</h2>
+                <h2 class="display-1 mb-5 text-center">What I Use</h2>
                 <div class="row gy-5">
                     <div class="col-12 col-lg-6" id="back-card">
                         <div class="icon-card">
@@ -605,10 +608,10 @@
         </section>
         <section class="section-page" id="contact">
             <div class="container">
-                <h2 class="display-1 mb-5 text-center">Contact Me</h2>
+                <h2 class="display-1 mb-3 text-center">Contact Me</h2>
                 <div class="text-start" id="contactForm">
                     <div class="container border rounded-2">
-                        <form action="#" class="row g-2 p-3">
+                        <form action="#" class="row g-3">
                             <div class="col-12 col-md-6">
                                 <label for="firstName" class="form-label">First Name</label>
                                 <input type="text" name="firstName" id="firstName" class="form-control"
@@ -656,7 +659,7 @@
                 </div>
                 <div class="col-9 col-lg-6 d-flex justify-content-end justify-content-lg-center">
                     <div class="card shadow">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center p-2">
                             <!-- TO DO: CHANGE THIS TO THE BUG TRACKER LINK -->
                             Check out my <a href="#" class="text-decoration-none">Bug Tracker</a>!
                         </div>
