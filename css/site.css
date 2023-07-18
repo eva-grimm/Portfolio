@@ -243,7 +243,15 @@ footer .card {
 }
 
 footer .card-body {
-    color: white;
+    color: var(--ce-accent-850);
+}
+
+footer a {
+    color: var(--ce-accent-600);
+}
+
+footer a:hover {
+    color: var(--ce-accent-500);
 }
 
 /* #endregion Footer Styles */
