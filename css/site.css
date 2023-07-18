@@ -126,6 +126,7 @@ section {
     align-items: center;
 }
 
+/* Toggle button for high contrast mode */
 #access-btn {
     position: absolute;
     top: 10vh;
@@ -133,6 +134,7 @@ section {
     font-size: 1.5rem;
 }
 
+/* Attribution for background image */
 #home-attr {
     position: absolute;
     bottom: 10vh;
@@ -222,7 +224,7 @@ section {
     background-color: var(--ce-theme-150);
 }
 
-/* attribution for images */
+/* attribution for about section image */
 #about-attr {
     padding-right: 4rem;
     font-size: .6rem;
