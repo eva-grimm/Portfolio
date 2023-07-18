@@ -79,11 +79,12 @@ h1,
 }
 
 a {
-    color: var(--ce-theme-500);
+    color: var(--ce-accent-400);
+    transition: .25s ease-in-out;
 }
 
 a:hover {
-    color: var(--ce-theme-400)
+    color: var(--ce-accent-300)
 }
 
 /* TO DO: Edit this margin later? Currently set to make sure footer never hides content */
@@ -187,6 +188,7 @@ section {
 .section-page:nth-child(even)>.container::after {
     clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
 }
+
 .section-page:nth-child(odd)>.container::after {
     clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
 }
@@ -215,10 +217,11 @@ section {
 .social-icons {
     font-size: 2rem;
     transition: color 0.5s;
+    color: var(--ce-accent-200);
 }
 
 .social-icons:hover {
-    color: var(--ce-theme-core)
+    color: var(--ce-accent-300)
 }
 
 footer.fixed-bottom {
@@ -226,7 +229,19 @@ footer.fixed-bottom {
 }
 
 footer .card {
-    background-color: var(--ce-theme-800);
+    background-color: var(--ce-accent-300);
+}
+
+footer .card-body {
+    color: var(--ce-theme-900);
+}
+
+footer .card-body>a {
+    color: var(--ce-theme-700);
+}
+
+footer .card-body>a:hover {
+    color: var(--ce-theme-600);
 }
 
 /* #endregion: Footer Styles */

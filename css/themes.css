@@ -15,17 +15,17 @@
 
     /* accent theme */
     --ce-accent-core: #f5978f;
-    --ce-accent-100: hsl(5, 50%, 91%);
-    --ce-accent-150: hsl(5, 50%, 86%);
-    --ce-accent-200: hsl(5, 50%, 81%);
-    --ce-accent-300: hsl(5, 50%, 71%);
-    --ce-accent-400: hsl(5, 50%, 61%);
-    --ce-accent-500: hsl(5, 50%, 51%);
-    --ce-accent-600: hsl(5, 50%, 41%);
-    --ce-accent-700: hsl(5, 50%, 31%);
-    --ce-accent-800: hsl(5, 50%, 21%);
-    --ce-accent-850: hsl(5, 50%, 16%);
-    --ce-accent-900: hsl(5, 50%, 11%);
+    --ce-accent-100: hsl(5, 84%, 91%);
+    --ce-accent-150: hsl(5, 84%, 86%);
+    --ce-accent-200: hsl(5, 84%, 81%);
+    --ce-accent-300: hsl(5, 84%, 71%);
+    --ce-accent-400: hsl(5, 84%, 61%);
+    --ce-accent-500: hsl(5, 84%, 51%);
+    --ce-accent-600: hsl(5, 84%, 41%);
+    --ce-accent-700: hsl(5, 84%, 31%);
+    --ce-accent-800: hsl(5, 84%, 21%);
+    --ce-accent-850: hsl(5, 84%, 16%);
+    --ce-accent-900: hsl(5, 84%, 11%);
 }
 
 [data-ce-theme="default"] {

@@ -11,9 +11,9 @@
 }
 
 #menuPill .nav-link {
-    --bs-navbar-active-color: var(--ce-theme-400);
-    --bs-navbar-hover-color: var(--ce-theme-200);
-    --bs-nav-link-hover-color: var(--ce-theme-200);
+    --bs-navbar-active-color: var(--ce-accent-300);
+    --bs-navbar-hover-color: var(--ce-accent-200);
+    --bs-nav-link-hover-color: var(--ce-accent-200);
 
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@
     #menuPill .nav-link.active .menu-label {
         max-width: 100%;
         padding-right: 1rem;
-        color: var(--ce-theme-300);
+        color: var(--ce-accent-200);
     }
 
     #menuPill>.nav-item:nth-child(1) .icon-container {
