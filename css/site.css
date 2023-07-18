@@ -128,7 +128,7 @@ section {
 
 #access-btn {
     position: absolute;
-    top: 3vh;
+    top: 10vh;
     right: 1rem;
     font-size: 1.5rem;
 }
@@ -292,6 +292,10 @@ footer a:hover {
 @media (min-width: 768px) {
     #home-contact>.btn {
         font-size: 1.2rem;
+    }
+
+    #access-btn {
+        top: 3vh;
     }
 
     #about-attr {
