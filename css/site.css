@@ -148,6 +148,10 @@ section {
     width: 100%;
 }
 
+#home-contact>.btn {
+    font-size: .6rem;
+}
+
 .main-title,
 .sub-title {
     color: var(--ce-light-color);
@@ -258,34 +262,24 @@ footer .card-body>a:hover {
 /* #endregion Footer Styles */
 
 /* #region Media Queries */
-/* X-Small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
+@media (min-width: 448px) {
+    #home-contact>.btn {
+        font-size: .8rem;
+    }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .main-title {
-        font-size: 7rem;
-        line-height: 5.5rem;
-    }
-
-    .sub-title {
-        font-size: 2.7rem;
-        line-height: 1.2rem;
-        letter-spacing: 0.18rem;
-        padding-top: .25rem;
+    #home-contact>.btn {
+        font-size: 1rem;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (min-width: 768px) {
+    #home-contact>.btn {
+        font-size: 1.2rem;
+    }
+}
 
 /* #endregion Media Queries */
