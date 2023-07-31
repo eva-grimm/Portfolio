@@ -102,6 +102,8 @@ section {
     --bs-btn-border-color: var(--ce-accent-250);
     --bs-btn-hover-bg: var(--ce-accent-300);
     --bs-btn-hover-border-color: var(--ce-accent-300);
+    --bs-btn-active-bg: var(--ce-accent-400);
+    --bs-btn-active-border-color: var(--ce-accent-400);
 }
 
 /*  #endregion Element Overrides */
@@ -117,6 +119,9 @@ section {
 }
 
 #home-cover {
+    /* backdrop filter for Safari */
+    -webkit-backdrop-filter: brightness(0.35) blur(3px);
+    /* backdrop filter for other browsers */
     backdrop-filter: brightness(0.35) blur(1px);
     height: 100%;
     width: 100%;
