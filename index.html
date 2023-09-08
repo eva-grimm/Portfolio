@@ -50,7 +50,7 @@
     </script>
 </head>
 
-<body>
+<body onload="fetchBlogData()">
     <div id="menuPillContainer" class="navbar navbar-dark">
         <nav id="menuPill" class="navbar-nav text-light">
             <div class="nav-item">
@@ -477,150 +477,10 @@
             <div class="container">
                 <h2 class="display-1 mb-5 text-center">Blogs</h2>
                 <p>
-                    I've been learning from others and their work for ages, and I want to pay it forward to other
-                    developers, particularly the next generation.
+                    My blogs about my journey to becoming a developer and what I've learned along the way.
                 </p>
                 <div id="blog-posts">
-                    <article class="card mb-4 blog-article">
-                        <div class="row blog-row g-0">
-                            <!-- blog image -->
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="img/blog/Blog_FlyingGirl.jpg" class="blog-image" alt="blog post image">
-                                </a>
-                                <!-- date of post -->
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
-                                </div>
-                            </div>
-                            <!-- title and text preview -->
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h3 class="card-title">MAKE SQL QUERIES FLY</h3>
-                                    <p class="card-text line-clamp">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero facere ex
-                                        aliquam laboriosam amet hic eveniet aperiam dolore perspiciatis itaque, facilis
-                                        voluptatem? Necessitatibus, eum adipisci amet asperiores nesciunt at.
-                                        In aut illum eligendi facilis culpa, totam vel corrupti reiciendis saepe enim,
-                                        exercitationem tempora dolorem recusandae accusamus nemo. Excepturi quisquam
-                                        placeat sed eaque dicta esse et velit temporibus soluta fuga.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text small text-muted">
-                                        Published 3 days ago
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row blog-row g-0">
-                            <!-- blog image -->
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="img/blog/Blog_Database.jpg" class="blog-image" alt="blog post image">
-                                </a>
-                                <!-- date of post -->
-                                <div class="blog-date">
-                                    <div class="blog-day">12</div>
-                                    <div class="blog-month">FEBRUARY</div>
-                                </div>
-                            </div>
-                            <!-- title and text preview -->
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h3 class="card-title">STORING IMAGES IN A DB</h3>
-                                    <p class="card-text line-clamp">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero facere ex
-                                        aliquam laboriosam amet hic eveniet aperiam dolore perspiciatis itaque, facilis
-                                        voluptatem? Necessitatibus, eum adipisci amet asperiores nesciunt at.
-                                        In aut illum eligendi facilis culpa, totam vel corrupti reiciendis saepe enim,
-                                        exercitationem tempora dolorem recusandae accusamus nemo. Excepturi quisquam
-                                        placeat sed eaque dicta esse et velit temporibus soluta fuga.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text small text-muted">
-                                        Published 3 days ago
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row blog-row g-0">
-                            <!-- blog image -->
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="img/blog/Blog_CodeTag.jpg" class="blog-image" alt="blog post image">
-                                </a>
-                                <!-- date of post -->
-                                <div class="blog-date">
-                                    <div class="blog-day">13</div>
-                                    <div class="blog-month">MARCH</div>
-                                </div>
-                            </div>
-                            <!-- title and text preview -->
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h3 class="card-title">THE POWER OF CSS</h3>
-                                    <p class="card-text line-clamp">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero facere ex
-                                        aliquam laboriosam amet hic eveniet aperiam dolore perspiciatis itaque, facilis
-                                        voluptatem? Necessitatibus, eum adipisci amet asperiores nesciunt at.
-                                        In aut illum eligendi facilis culpa, totam vel corrupti reiciendis saepe enim,
-                                        exercitationem tempora dolorem recusandae accusamus nemo. Excepturi quisquam
-                                        placeat sed eaque dicta esse et velit temporibus soluta fuga.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text small text-muted">
-                                        Published 3 days ago
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row blog-row g-0">
-                            <!-- blog image -->
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="img/blog/Blog_DecisionRoad.jpg" class="blog-image" alt="blog post image">
-                                </a>
-                                <!-- date of post -->
-                                <div class="blog-date">
-                                    <div class="blog-day">14</div>
-                                    <div class="blog-month">APRIL</div>
-                                </div>
-                            </div>
-                            <!-- title and text preview -->
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h3 class="card-title">SPA VS MPA FRAMEWORKS</h3>
-                                    <p class="card-text line-clamp">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero facere ex
-                                        aliquam laboriosam amet hic eveniet aperiam dolore perspiciatis itaque, facilis
-                                        voluptatem? Necessitatibus, eum adipisci amet asperiores nesciunt at.
-                                        In aut illum eligendi facilis culpa, totam vel corrupti reiciendis saepe enim,
-                                        exercitationem tempora dolorem recusandae accusamus nemo. Excepturi quisquam
-                                        placeat sed eaque dicta esse et velit temporibus soluta fuga.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
-                                    <p class="card-text small text-muted">
-                                        Published 3 days ago
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                    <!-- Blog Posts Populate Here -->
                 </div>
             </div>
         </section>
@@ -693,6 +553,38 @@
             </div>
         </div>
     </footer>
+
+    <template id="blog-template">
+        <article class="card mb-4 blog-article">
+            <div class="row blog-row g-0">
+                <!-- blog image -->
+                <div class="col-lg-4 blog-header">
+                    <a href="#" class="blog-image-link" data-blog="imageLink">
+                    </a>
+                    <!-- date of post -->
+                    <div class="blog-date">
+                        <div class="blog-day" data-blog="day"><!-- publish day goes here --></div>
+                        <div class="blog-month" data-blog="month"><!-- publish month goes here --></div>
+                    </div>
+                </div>
+                <!-- title and text preview -->
+                <div class="col-lg-8">
+                    <div class="card-body h-100 d-flex flex-column justify-content-around">
+                        <h3 class="card-title" data-blog="title"><!-- title goes here --></h3>
+                        <p class="card-text line-clamp" data-blog="abstract">
+                            <!-- abstract goes here -->
+                        </p>
+                        <div>
+                            <a href="#" class="btn btn-primary" data-blog="readMoreLink">Read More</a>
+                        </div>
+                        <p class="card-text small text-muted" data-blog="publishedDate">
+                            Published 3 days ago -- keeeeep?????
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </template>
 
     <!-- MODALS -->
     <!-- Chrysalis Modal -->
@@ -1078,6 +970,9 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
+    <!-- Blog API JS -->
+    <script src="/js/blogApi.js"></script>
 </body>
 
 </html>
