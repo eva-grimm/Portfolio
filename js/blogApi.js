@@ -56,7 +56,7 @@ async function displayBlogData(data, baseUrl) {
 
         //add content
         let blogContentDiv = blogPostCard.querySelector('[data-blog="abstract"]');
-        blogContentDiv.innerHTML = blogPost.abstract;
+        blogContentDiv.innerHTML = blogPost.abstract != "" ?  blogPost.abstract : blogPost.content;
 
         //readmore link
         let blogLink = blogPostCard.querySelector('[data-blog="readMoreLink"]');
@@ -72,8 +72,10 @@ async function displayBlogData(data, baseUrl) {
             blogPost.updated != null ? blogPost.updated : blogPost.created
         );
         let diffTime = Math.abs(dateToday.getTime() - createdDate.getTime());
-        let lastUpdated = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        if (lastUpdated == 1) {
+        let lastUpdated = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        if (lastUpdated == 0) {
+            blogPubDate.innerHTML = `Published today`;
+        } else if (lastUpdated == 1) {
             blogPubDate.innerHTML = `Published ${lastUpdated} day ago`;
         } else {
             blogPubDate.innerHTML = `Published ${lastUpdated} days ago`;
